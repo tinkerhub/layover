@@ -82,6 +82,7 @@ section{padding-block:56px;}
 .nav-links{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-size:.9rem;font-weight:600;}
 .nav-links a{text-decoration:none;color:var(--ink-soft);border-bottom:2px solid transparent;padding-block:3px;}
 .nav-links a:hover{color:var(--blue);border-color:var(--orange);}
+.nav-cta{display:flex;align-items:center;gap:10px;}
 
 /* ---------- doodles ---------- */
 .doodle svg{display:block;overflow:visible;}
@@ -368,6 +369,7 @@ section{padding-block:56px;}
 /* ---------- responsive ---------- */
 @media (max-width: 860px){
   .nav-links{display:none;}
+  .nav-cta .btn{padding:10px 16px;font-size:.86rem;}
   .hero-main{grid-template-columns:1fr;}
   .hero-art{
     position:static;order:0;min-height:auto;padding-top:0;
@@ -396,4 +398,8 @@ section{padding-block:56px;}
   .strip .wrap{grid-template-columns:repeat(2,1fr);}
   .milestone{grid-template-columns:96px 18px 1fr;gap:10px;}
   .bar-row{grid-template-columns:104px 1fr 32px;}
+}
+
+@media (max-width: 420px){
+  .nav-cta .btn-mentor{display:none;}
 }
