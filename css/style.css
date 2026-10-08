@@ -351,6 +351,13 @@ section{padding-block:56px;}
 }
 .faq-item[open] summary::after{content:"\2212";transform:rotate(180deg);color:#fff;background:var(--orange);border-color:var(--outline);}
 .faq-item .faq-a{padding:0 0 18px;color:var(--ink-soft);font-size:.88rem;border-top:2px dashed var(--line);padding-top:14px;}
+.faq-a p{margin:0 0 10px;}
+.faq-table{width:100%;border-collapse:collapse;font-size:.82rem;}
+.faq-table th,.faq-table td{text-align:left;vertical-align:top;padding:8px 6px;border-bottom:1.5px solid var(--line);}
+.faq-table th{font-family:"Baloo 2";font-weight:600;color:var(--ink);}
+.faq-table td:first-child{font-weight:600;color:var(--ink);}
+.faq-table td:nth-child(2){font-weight:700;color:var(--orange);white-space:nowrap;}
+.faq-table tbody tr:last-child td{border-bottom:none;}
 
 /* ---------- footer ---------- */
 .footer{background:var(--bg-soft);border-top:2.5px solid var(--line);padding-block:56px 30px;margin-top:20px;position:relative;overflow:hidden;}
