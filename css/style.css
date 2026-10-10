@@ -74,6 +74,7 @@ section{padding-block:56px;}
 .btn:focus-visible{outline:3px solid var(--blue);outline-offset:3px;}
 .btn-primary{background:var(--orange);color:#fff;border-color:var(--outline);}
 .btn-ghost{background:var(--bg);}
+.btn-closed,.btn-closed:hover,.btn-closed:active{opacity:.6;cursor:default;transform:none;}
 
 /* ---------- nav ---------- */
 .nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb, var(--bg) 92%, transparent);backdrop-filter:blur(8px);border-bottom:2px solid var(--line);}
