@@ -480,3 +480,6 @@ section{padding-block:56px;}
 .proj-teaser .tag{max-width:none;}
 @media (max-width: 860px){ .pgrid{grid-template-columns:repeat(2,1fr);} }
 @media (max-width: 560px){ .pgrid{grid-template-columns:1fr;} }
+
+.nav-links a{white-space:nowrap;}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;}
