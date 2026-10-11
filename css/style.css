@@ -450,3 +450,33 @@ section{padding-block:56px;}
 @media (max-width: 560px){
   .proj-grid{grid-template-columns:1fr;}
 }
+
+/* Projects page */
+.projects-page{padding-top:40px;}
+.pcount{font-family:"Space Mono";font-size:.8rem;color:var(--ink-soft);margin:-14px 0 22px;}
+.pcount b{color:var(--orange-deep);font-size:1rem;}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.pcard{background:var(--bg);border:2.5px solid var(--outline);border-radius:18px;box-shadow:var(--shadow-hard);overflow:hidden;display:flex;flex-direction:column;}
+.pcard-media{aspect-ratio:16/10;border-bottom:2.5px solid var(--outline);background:var(--bg-soft);}
+.pcard-media img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;}
+.proj-art{width:100%;height:100%;display:grid;place-items:center;background:var(--blue);background-image:radial-gradient(rgba(255,255,255,.18) 1.5px,transparent 1.5px);background-size:18px 18px;}
+.proj-art.alt{background-color:var(--orange);}
+.proj-art span{font-family:"Baloo 2";font-weight:800;font-size:4.5rem;color:#fff;text-shadow:4px 4px 0 var(--outline);}
+.pcard-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:6px;flex:1;}
+.pcard-tags{font-family:"Space Mono";font-size:.66rem;font-weight:700;letter-spacing:.08em;color:var(--orange-deep);text-transform:uppercase;}
+.pcard-title{font-family:"Baloo 2";font-size:1.45rem;line-height:1.1;margin:0;}
+.pcard-team{font-size:.82rem;color:var(--blue);font-weight:700;}
+.pcard-short{color:var(--ink-soft);font-size:.92rem;}
+.pcard-more summary{cursor:pointer;font-size:.84rem;font-weight:700;color:var(--ink);list-style:none;}
+.pcard-more summary::-webkit-details-marker{display:none;}
+.pcard-more summary::after{content:" →";}
+.pcard-more[open] summary::after{content:" ↑";}
+.pcard-more p{margin-top:8px;font-size:.9rem;color:var(--ink);background:var(--bg-soft);border-radius:12px;padding:12px 14px;}
+.pcard-actions{margin-top:auto;padding-top:12px;display:flex;flex-wrap:wrap;gap:10px;}
+.btn-sm{padding:8px 14px;font-size:.84rem;}
+.pcard-actions .pending{font-size:.84rem;color:var(--ink-faint);font-weight:600;}
+.pnote{margin-top:34px;color:var(--ink-soft);}
+.pnote a{color:var(--blue);font-weight:700;}
+.proj-teaser .tag{max-width:none;}
+@media (max-width: 860px){ .pgrid{grid-template-columns:repeat(2,1fr);} }
+@media (max-width: 560px){ .pgrid{grid-template-columns:1fr;} }
